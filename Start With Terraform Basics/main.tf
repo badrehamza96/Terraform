@@ -1,4 +1,4 @@
-## Provider's Example
+/*## Provider's Example
 
 # Configure the AWS Provider
 provider "aws" {
@@ -13,3 +13,4 @@ provider "azurerm" {
     version = "2.72.0"
     features {}
 }
+*/
