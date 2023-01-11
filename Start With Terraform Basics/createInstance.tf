@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "MyHB-Instance1"{
-  ami="ami-09042b2f6d07d164a"
+  ami="ami-0039da1f3917fa8e3"
   instance_type = "t2.micro"
 }
 
