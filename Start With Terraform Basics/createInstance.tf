@@ -1,10 +1,12 @@
 
-resource "aws_instance" "MyFirstInstnace" {
-  count         = 3
-  ami           = "ami-0bff25b43a4479334"
-  instance_type = "t4g.micro"
-
-  tags = {
-    Name = "demoinstnce-${count.index}"
-  }
+provider "aws" {
+  access_key="AKIAUDAOT56DNDTYL2GY"
+  secret_key = "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"
+  region = eu-central-1"
 }
+
+resource "aws_instance" "MyHB-Instance1"{
+  ami=""
+  instance_type = "t2.micro"
+}
+
