@@ -1,7 +1,7 @@
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
 variable "AWS_REGION" {
-   # default = "eu-central-1"
+    default = "eu-central-1"
 }
 variable "Security_Groups" {
   type= list
