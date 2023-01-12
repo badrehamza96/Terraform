@@ -8,7 +8,7 @@ resource "aws_instance" "MyHB-Instance1"{
     Name = "DemoInstance-1"
   }
 
-  #security_groups = "${var.Security_Groups}"
+  security_groups = "${var.Security_Groups}"
 
 }
 
