@@ -1,11 +1,11 @@
 
-resource "aws_instance" "MyFirstInstnace" {
-  ami           = lookup(var.AMIS, var.AWS_REGION)
+resource "aws_instance" "MyHB-Instance1"{
+ # count = 3
+  ami="ami-0039da1f3917fa8e3"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "demoinstnce"
+    Name = "DemoInstance-1"
   }
-
-  security_groups = var.Security_Group
 }
+
