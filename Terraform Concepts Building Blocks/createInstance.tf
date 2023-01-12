@@ -7,7 +7,7 @@ resource "aws_instance" "MyHB-Instance1"{
  # count = 3
   ami= lookup(var.AMIS, var.AWS_REGION)
   instance_type = "t2.micro"
-  key_name = aws_key_pair.hb_key_pair.key_name
+  key_name = aws_key_pair.hb_key.key_name
 
   tags = {
     Name = "DemoInstance-1"
