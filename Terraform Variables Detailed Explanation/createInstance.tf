@@ -7,5 +7,8 @@ resource "aws_instance" "MyHB-Instance1"{
   tags = {
     Name = "DemoInstance-1"
   }
+ 
+  ignore_changes = ["AWS_ACCESS_KEY","AWS_SECRET_KEY" ]
+
 }
 
