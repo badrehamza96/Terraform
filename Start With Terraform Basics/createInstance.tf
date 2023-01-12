@@ -5,7 +5,7 @@ resource "aws_instance" "MyHB-Instance1"{
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ThreeDemoInstances"
+    Name = "DemoInstance-$(count.index + 1)"
   }
 }
 
